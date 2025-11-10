@@ -9,3 +9,19 @@ auth {
   refresh_token_ttl_sec: 2592000
 }
 jobs {}
+record_apis: [{
+  name: "Category"
+  table_name: "Category"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "Supplier"
+  table_name: "Category"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "Product"
+  table_name: "Category"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}]
